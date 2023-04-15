@@ -1,0 +1,72 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    background-image: linear-gradient(rgb(235, 65, 65),rgb(106, 180, 106),rgb(130, 130, 245));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+body{
+    background-image: radial-gradient(#FEADB9,#a0a1bb);
+}
+#colorPreview{
+    height: 200px;
+    width : 200px;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    border-radius: 20%;
+    box-shadow: 7px 7px 7px 7px grey;
+}
+p{
+    padding-top : 33%;
+    font-style: bold;
+    font-size: x-large;
+}
+
+.grid-container{
+    display : flex;
+    margin : auto;
+    margin-top: 3%;
+    width: 50%;
+    background-image: radial-gradient(#E7FFac,#d0d2f3);
+    border: 4px rgb(219, 213, 213) solid;
+    box-shadow: 5px 5px 5px 5px  rgb(240, 214, 214);
+    border-radius: 20%;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin :auto;
+    
+}
+.flex-item{
+    margin:15% 0%;
+    border: 1px inset grey;
+    border-radius: 20%;
+    padding: 10%;
+}
+.flex-item:hover{
+    box-shadow: 3px 3px 3px 3px  grey;
+}
+#colorPreview:hover{
+    transform: scale(1.1);
+    transition-delay: 0.1s;
+}
+label{
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+}
+#redlabel{
+    color: red;
+}
+#greenlabel{
+    color: green;
+}
+#bluelabel{
+    color:blue;
+}
+

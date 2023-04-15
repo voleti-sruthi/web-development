@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOUR PICKER</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>RGB Colour Picker</h1>
+    <div class="grid-container">
+        <div class = "grid-item ">
+            <div class="redContainer flex-item">
+                <label for="redPicker" id="redlabel">Red</label>
+                <input type="range" name="red" id="redPicker" min="0" max="255" value=0>
+            </div>
+            <div class="greenContainer flex-item">
+                <label for="greenPicker" id="greenlabel">Green</label>
+                <input type="range" name="green" id="greenPicker" min="0" max="255" value=0>
+            </div>
+            <div class="blueContainer flex-item">
+                <label for="bluePicker" id="bluelabel">Blue</label>
+                <input type="range" name="blue" id="bluePicker" min="0" max="255" value=0>
+            </div>
+        </div>
+        <div class = "grid-item">
+            <div id="colorPreview" class="flex-item">
+                <p id="code"></p>
+            </div>
+            <div class="flex-item">
+                <label for="decimal">DECIMAL</label>
+                <input checked type="radio" id="decimal" name="format" onclick="getColour()">
+                <label for="hexadecimal">HEXADECIMAL</label>
+                <input type="radio" id="hexadecimal" name="format" onclick="getColour()">
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
