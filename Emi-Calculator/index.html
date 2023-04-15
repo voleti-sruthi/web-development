@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI CALCULATOR</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>EMI CALCULATOR</h1>
+    <div class="grid-container">
+        <label for = "amount">Principal Amount()</label>
+        <input type = "number" name ="amount" id ="amount">
+        <label for = "interestRate">Interest Rate</label>
+        <input type ="number" name = "interestRate" id = "interestRate">
+        <label for = "months">Number Of Months</label>
+        <input type = "number" name = "months" id = "months">
+        <button class="cal" onclick="calculateEmi()">Calculate</button>
+        <label for="emi">EMI</label>
+        <input readonly type="number" value=0 id = "emi">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

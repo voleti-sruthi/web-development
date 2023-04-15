@@ -1,0 +1,40 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    margin:20px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px lightblue;
+}
+label{
+    background-color: lightslategray;
+    padding: 5px;
+    margin: 3px;
+    border: 1px;
+    border-radius: 15%;
+}
+input{
+    margin: 3px ;
+    background-color: #F6DAE4;
+}
+body{
+    padding: 10%;
+    background-image: radial-gradient(#D4F0F7,#e2f0cb);
+}
+.cal{
+    grid-row: 4/4;
+    grid-column: 1/3;
+    width: 50%;
+    justify-self: center;
+    margin: 20px;
+}
+h1{
+    text-align: center;
+}
+button{
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: radial-gradient(#F6DAE4, #D4F0F7,#e2f0cb);
+}
