@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(10, 1, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    position: relative;
+    display: block;
+    text-align: center;
+    color: white;
+}
+#time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item{
+    position: relative;
+    margin: 10%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+}
+span{
+    position: relative;
+    background-color: rgb(143, 183, 228);
+    display: block;
+    height: 75px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 1px grey;
+    color: white;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+.name{
+    height: 30px;
+    background-color: rgb(75, 89, 170);
+    font-size: 20px;
+    color: white;
+}
+#second span{
+    
+}
+
+.flex-item:last-child span {
+    background-color: rgb(189, 46, 94);
+}
