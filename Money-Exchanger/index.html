@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Exchanger</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+
+<body>
+    <h1>CURRENCY CONVERTER</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount">
+        </div>
+        <div class="grid-item">
+            <div class = "flex-container">
+                <img src="images/india.jpg" id ="fromflag" alt="">
+                <label for="fromCurr">From Currency</label>
+                <select name="fromCurr" id="fromCurr" onchange="changeFromFlag(value)">
+                    <option value="USA">USD</option>
+                    <option selected value="India">Rupee</option>
+                    <option value="Europe">Euro</option>
+                    <option value="Dubai">UAED</option>
+                    <option value="Africa">ZAR</option>
+                </select>
+             </div>
+
+             <div>
+                <label for="exchange"></label>
+                <button class="swap" id="exchange" onclick="swaped()" >
+                    <i  class="fas fa-exchange-alt"></i>
+                </button>
+             </div>
+             <div class = "flex-container">
+                <img src="images/usa.jpg" id="toflag" alt="">
+                <label for="toCurr">To Currency</label>
+                <select name="toCurr" id="toCurr" onchange="changeToFlag(value)">
+                    <option selected value="USA" >USD</option>
+                    <option value="India" >Rupee</option>
+                    <option value="Europe">Euro</option>
+                    <option value="Dubai">UAED</option>
+                    <option value="Africa">ZAR</option>
+            </select>
+            </div>
+        </div>
+        <div class="grid-item">
+            <button class="btn" onclick="exchange()">CONVERT</button>
+            <button class="btn" onclick="reset()">RESET</button>
+        </div>
+        <div>
+            <p id="converted"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
