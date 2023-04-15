@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class = "Calculator">
+        <div class = "Output" id='ans'>0</div>
+        <div class = "keys-container">
+            <button class="key clear other" onclick="ac()">AC</button>
+            <button class="key percentage other" onclick="add('%')">%</button>
+            <button class="key operators" onclick="add('/')">÷</button>
+            <button class="key number" onclick="add(7)">7</button>
+            <button class="key number" onclick="add(8)">8</button>
+            <button class="key number" onclick="add(9)">9</button>
+            <button class="key operators" onclick="add('*')">&times</button>
+            <button class="key number" onclick="add(4)">4</button>
+            <button class="key number" onclick="add(5)">5</button>
+            <button class="key number" onclick = "add(6)">6</button>
+            <button class="key operators" onclick="add('-')">-</button>
+            <button class="key number" onclick="add(1)">1</button>
+            <button class="key number" onclick = "add(2)">2 </button>
+            <button class="key number" onclick="add(3)">3</button>
+            <button class="key operators add" onclick="add('+')">+</button>
+            <button class="key decimal other" onclick="add('.')">.</button>
+            <button class = "key number " onclick="add(0)">0</button>
+            <button class="key calculate other" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
