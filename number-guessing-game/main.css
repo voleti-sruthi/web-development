@@ -1,0 +1,67 @@
+body{
+    margin : 2% 0%;
+    background-image : radial-gradient(#e5ebab,#d6fff8);
+    font-family: 'Chivo Mono', monospace;
+    font-weight: bold;
+    text-align: center;
+}
+h1{
+    margin-bottom: 5rem;
+    font-size: 5rem;
+}
+.popUp{
+    animation : slowPop 1.5s;
+    border-radius : 50px;
+    margin: auto;
+    width : 40%;
+    text-align : center;
+    padding : 2%;
+    display : block;
+    transform : scale(1.2);
+    background-image : radial-gradient(#e5ebab,#70bda9);
+    box-shadow: 10px 10px 10px 10px #5eb39d;
+}
+
+@keyframes slowPop {
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 25%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    75%{
+        opacity: 75%;
+    }
+    100%{
+        opacity:100%;
+    }
+
+}
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.flex-item{
+    margin: 1.5rem;
+}
+.difficultyLevel{
+    margin-top: 10%;
+    background-color: rgb(211, 236, 228);
+    height: 30px;
+    border-radius: 50px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+.difficultyLevel:hover{
+    background-color:rgb(229, 240, 133) ;
+}
+.popDown{
+    display: none;
+}
+.navbar{
+    color: rgb(247, 100, 100);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="body" onload="set()">
+    <h1>NUMBER GUESSING GAME</h1>
+    <div id="pop" class="popUp">
+        <h2>Choose difficulty Level</h2>
+        <div class="flex-box" id="level-box">
+            <div class="flex-item">
+                <button value="easy" class="difficultyLevel easy" onclick="level(value)">EASY</button>
+                <p>No: Of Changes = 3</p>
+            </div>
+            <div class="flex-item">
+                <button value="medium" class="difficultyLevel medium " onclick="level(value)">MEDIUM</button>
+                <p>No: Of Changes = 5</p>
+            </div>
+            <div class="flex-item">
+                <button value="hard" class="difficultyLevel hard" onclick="level(value)">HARD</button>
+                <p>No: Of Changes = 10</p>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="main popDown">
+        <div class="flex-box navbar">
+            <label for="lifes">Lifes</label>
+            <p id="lifes"></p>
+            <label for="highScore">HighestScore</label>
+            <p>1000</p>
+        </div>
+        <h3>GUESS MY NUMBER</h3>
+        <p id = "range"></p>
+        <label for="guessNum">Guess Number</label>
+        <input type="number" id="guessNum">
+        <br>
+        <button class="difficultyLevel" id=" checkbtn" onclick="check()">Check</button>
+        <p id = "hint"></p>
+    </div>
+    <div class="restart popDown">
+        <p id="occ">Hurry You Guessed It Correctly!</p>
+        <p id="score"></p>
+        <label for="play">Do You Wanna Play Again?</label>
+        <br>
+        <button class="difficultyLevel" id="playAgain" onclick="playagain()">Play Again</button>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
