@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    body{
+        background-color: #F3F1F5;
+        padding: 0% 25%;
+
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    input{
+        height: 20px;
+        padding: 3px;
+        border-radius: 10%;
+    }
+    td{
+        font-weight: bolder;
+        padding: 15px;
+    }
+    form{
+        border: 2px solid;
+        border-radius: 50px;
+        padding: 30px;
+        background-color: grey;
+    }
+    .submitButton{
+        background-color: grey;
+        width: 100px;
+        height: 50px;
+        border-radius: 50%;
+        font-weight: bold;
+    }
+    .submitButton:hover{
+        transform: scale(1.1);
+        transition-delay: 5ms;
+        background-color: beige;
+    }
+    #Feedback{
+        height: 75px;
+    }
+</style>
+<body>
+    <h1>VIGNESH CLOTHING 🛒</h1>
+    <div class = "form">
+        <form action="">
+            <table align="center">
+                <tr>
+                    <td><label for="Salutation" >Salutation</label></td>
+                    <td>
+                        <select id="Salutation">
+                        <option value="Mr">Mr.</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select>
+                </td>
+                    
+                </tr>
+                <tr>
+                    <td ><label for="Name" >Name</label></td>
+                        <td><input placeholder= "Name.." type="text" id="Name" ></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Email</label></td>
+                    <td><input placeholder = "example123@gmail.com" type="email" id="Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="PhoneNumber">Phone Number</label></td>
+                    <td><input type="tel" name="" id="PhoneNumber"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="male" name = "Gender">
+                        <label for="male">Male</label>
+                        <input type="radio" name="Gender" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Size" >Size</label></td>
+                    <td>
+                        <select id="Size">
+                        <option value="Mr">S</option>
+                        <option value="Miss">M</option>
+                        <option value="Mrs.">L</option>
+                        <option value="Mrs.">XL</option>
+                    </select>
+                </td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="Add">Address</label></td>
+                    <td><input type="text" name="" id="Add"></td>
+                </tr>
+                <tr>
+                    <td><label for="Feedback">Feedback</label></td>
+                    <td><input type="text" name="" id="Feedback"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" ><input class="submitButton" type="submit" name="" id=""></td>    
+                </tr>
+            </table>
+            
+        </form>
+        
+    </div>
+</body>
+</html>    

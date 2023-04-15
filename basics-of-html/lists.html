@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .roman{
+            list-style: upper-roman;
+        }
+        .alpha{
+            list-style: upper-alpha;
+        }
+        .smallRoman{
+            list-style: lower-roman;
+        }
+        div{
+            border: 1px solid;
+            padding: 25px;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            font-weight: bold;
+            color: coral;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Web Design</h1>
+    <div>
+        <ul class = "roman">
+            <li>Background Skills</li>
+            <ul class = "alpha">
+                <li>Unix Commands</li>
+                <li>Vim Text Editor</li>
+            </ul>
+            <li>HTML</li>
+            <ul>
+                <ul class = "alpha">
+                    <li>Mnimal page</li>
+                    <li>Headings</li>
+                    <li>Elements</li>
+                    <li>Lists</li>
+                    <ul class = "smallRoman">
+                        <li>Unordered</li>
+                        <li>Ordered</li>
+                        <li>Definition</li>
+                        <li>Nested</li>
+                    </ul>
+                    <li>Links</li>
+                    <ul class="smallRoman">
+                        <li>Absolute</li>
+                        <li>Relative</li>
+                    </ul>
+                    <li>Images</li>
+                </ul>
+            </ul>
+            <li>CSS</li>
+            <ul class = "alpha">
+                <li>Anatomy</li>
+                <li>Basic Selectors</li>
+                <ul class ="smallRoman">
+                    <li>Elements</li>
+                    <li>Class</li>
+                    <li>ID</li>
+                    <li>Group</li>
+                </ul>
+                <li>The DOM</li>
+                <li>Advanced Selectors</li>
+                <li>Box Model</li>
+            </ul>
+            <li>Programming</li>
+            <ul class = "alpha">
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ul>
+            <li>Database</li>
+            <ul class = "alpha">
+                <li>Flat File</li>
+                <li>Relational</li>
+            </ul>
+    
+        </ul>
+    </div>
+    <p>HTML Vaild! | CSS Valid!</p>
+</body>
+</html>
